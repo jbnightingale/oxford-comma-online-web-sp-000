@@ -4,7 +4,6 @@ def oxford_comma(array)
   elsif array.size >= 3
     array.join(", ")
     #add " and " at the possition 1 minus the array length
+    array.insert(-1, "and ")
   end
-  second_to_last = array.size - 1
-  array.insert(second_to_last, "and ")
 end
